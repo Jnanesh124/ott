@@ -132,7 +132,7 @@ async def next_page(bot, query):
         btn.insert(0, 
             [                
                 InlineKeyboardButton("🔊ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("🔍 HOW TO DOWNLOAD🔎", url=f"https://t.me/+D7L-rX9lKA43MGRl"),
+                InlineKeyboardButton("🔍 HOW TO DOWNLOAD🔎", url=f"https://t.me/ROCKERS_HOW_TO_OPEN_LINKS/1153"),
                 InlineKeyboardButton("🎭Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
         )        
@@ -141,7 +141,7 @@ async def next_page(bot, query):
         btn.insert(0, 
             [                
                 InlineKeyboardButton("🔊ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("🔍 HOW TO DOWNLOAD🔎", url=f"https://t.me/+D7L-rX9lKA43MGRl"),
+                InlineKeyboardButton("🔍 HOW TO DOWNLOAD🔎", url=f"https://t.me/ROCKERS_HOW_TO_OPEN_LINKS/1153"),
                 InlineKeyboardButton("🎭Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
         )        
@@ -242,12 +242,12 @@ async def next_page(bot, query):
     time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(curr_time.second+(curr_time.microsecond/1000000)))
     remaining_seconds = "{:.2f}".format(time_difference.total_seconds())
     if settings["button"]:
-        cap = f"<b>Tʜᴇ Rᴇꜱᴜʟᴛꜱ Fᴏʀ ☞ {search}\n\nRᴇǫᴜᴇsᴛᴇᴅ Bʏ ☞ {query.from_user.mention}\n\nʀᴇsᴜʟᴛ sʜᴏᴡ ɪɴ ☞ {remaining_seconds} sᴇᴄᴏɴᴅs\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ☞ : {query.message.chat.title} \n\n⚠️ ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️\n\n</b>"
+        cap = f"<b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐌𝐎𝐕𝐈𝐄 ➢ {search} </b>\n<b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 ➢ {message.chat.title} </b>\n<b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐏𝐄𝐑𝐒𝐎𝐍 ➢ {message.from_user.mention}</b>\n<b>⏱️ Result in: {remaining_seconds} <i>seconds</i> 🚀\n</b>"
     else:
         # cap = f"<b>Hᴇʏ {query.from_user.mention}, Hᴇʀᴇ ɪs ᴛʜᴇ ʀᴇsᴜʟᴛ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search} \n\n</b>"
-        cap = f"<b>Hᴇʏ {query.from_user.mention}, Fᴏᴜɴᴅ {total} Rᴇsᴜʟᴛs ғᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ {search}\n\n</b>"
+        cap = f"<b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐌𝐎𝐕𝐈𝐄 ➢ {search} </b>\n<b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 ➢ {message.chat.title} </b>\n<b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐏𝐄𝐑𝐒𝐎𝐍 ➢ {message.from_user.mention}</b>\n<b>⏱️ Result in: {remaining_seconds} <i>seconds</i> 🚀\n</b>"
         for file in files:
-            cap += f"<b>📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
+            cap += f"<b>🚀 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
 
     try:
         await query.message.edit_text(text=cap, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
@@ -404,8 +404,8 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             btn.insert(0, 
                 [
                     InlineKeyboardButton("🔊ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-                    InlineKeyboardButton("𝐇𝐨𝐰 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝", url=f"https://t.me/d68f97g97/54"),
-                    InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                    InlineKeyboardButton("🔎𝐇𝐨𝐰 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝🔍", url=f"https://t.me/ROCKERS_HOW_TO_OPEN_LINKS/1153"),
+                    InlineKeyboardButton("🎭Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
                 ]
             )
 
@@ -413,8 +413,8 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             btn.insert(0, 
                 [
                     InlineKeyboardButton("🔊ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-                    InlineKeyboardButton("𝐇𝐨𝐰 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝", url=f"https://t.me/d68f97g97/54"),
-                    InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                    InlineKeyboardButton("🔍𝐇𝐨𝐰 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝🔎", url=f"https://t.me/ROCKERS_HOW_TO_OPEN_LINKS/1153"),
+                    InlineKeyboardButton("🎭Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
                 ]
             )
                 
@@ -423,8 +423,8 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0, 
             [
                 InlineKeyboardButton("🔊ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("𝐇𝐨𝐰 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝", url=f"https://t.me/d68f97g97/54"),
-                InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("🔍𝐇𝐨𝐰 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝🔎", url=f"https://t.me/ROCKERS_HOW_TO_OPEN_LINKS/1153"),
+                InlineKeyboardButton("🎭Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
         )
 
@@ -914,10 +914,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         reply_markup=InlineKeyboardMarkup(
                             [
                              [
-                              InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/+D7L-rX9lKA43MGRl'),
-                              InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                            ],[
-                              InlineKeyboardButton("MY best friend", url="{message.from_user.first_name}")
+                              InlineKeyboardButton('🚀 UPDATES CHANNEL🚀', url=f'https://t.me/ROCKERSBACKUP')                            
                              ]
                             ]
                         )
@@ -1007,10 +1004,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/+D7L-rX9lKA43MGRl'),
-                  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                ],[
-                  InlineKeyboardButton("MY best friend", url="{message.from_user.first_name}")
+                  InlineKeyboardButton('🚀 UPDATES CHANNEL🚀', url=f'https://t.me/ROCKERSBACKUP')
                  ]
                 ]
             )
@@ -1907,7 +1901,7 @@ async def auto_filter(client, msg, spoll=False):
         btn.insert(0, 
             [
                 InlineKeyboardButton("🔊ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("🔍 HOW TO DOWNLOAD🔎", url=f"https://t.me/+D7L-rX9lKA43MGRl"),
+                InlineKeyboardButton("🔍 HOW TO DOWNLOAD🔎", url=f"https://t.me/ROCKERS_HOW_TO_OPEN_LINKS/1153"),
                 InlineKeyboardButton("🎭Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
         )        
@@ -1916,7 +1910,7 @@ async def auto_filter(client, msg, spoll=False):
         btn.insert(0, 
             [
                 InlineKeyboardButton("🔊ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("🔍 HOW TO DOWNLOAD🔎", url=f"https://t.me/+D7L-rX9lKA43MGRl"),
+                InlineKeyboardButton("🔍 HOW TO DOWNLOAD🔎", url=f"https://t.me/ROCKERS_HOW_TO_OPEN_LINKS/1153"),
                 InlineKeyboardButton("🎭Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
         )        
