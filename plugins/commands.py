@@ -66,12 +66,12 @@ async def start(client, message):
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
-                btn.append([InlineKeyboardButton(f'↻ Tʀʏ Aɢᴀɪɴ', 'select')])
+                btn.append([InlineKeyboardButton(f'↻ Tʀʏ Aɢᴀɪɴ', callback_data=f"checksub#{kk}#{file_id}")])
             except (IndexError, ValueError):
                 btn.append([InlineKeyboardButton(f'↻ Tʀʏ Aɢᴀɪɴ', 'select')])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**join our channel given below 👇 and again ask in ur group **",
+            text="**<b>join our channel given below<\b>**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
@@ -129,12 +129,9 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('Request Gʀᴏᴜᴘ', url=f'https://t.me/+VJzhxoD6GD9kNmQ1'),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                       ],[
-                          InlineKeyboardButton("MY Owner", url="t.me/alonekingjnanesh")
-                         ]
+                          InlineKeyboardButton(f'⚠️ :- Disclaimer', 'SINFO')                          
                         ]
+                       ]
                     )
                 )
             except FloodWait as e:
@@ -148,12 +145,9 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('Request Gʀᴏᴜᴘ', url=f'https://t.me/+VJzhxoD6GD9kNmQ1'),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                       ],[
-                          InlineKeyboardButton("MY Owner", url="t.me/alonekingjnanesh")
-                         ]
+                          InlineKeyboardButton(f'⚠️ :- Disclaimer', 'SINFO')
                         ]
+                       ]
                     )
                 )
             except Exception as e:
@@ -312,12 +306,9 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('Request Gʀᴏᴜᴘ', url=f'https://t.me/+VJzhxoD6GD9kNmQ1'),
-                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                   ],[
-                      InlineKeyboardButton("MY Owner", url="t.me/alonekingjnanesh")
-                     ]
+                      InlineKeyboardButton(f'⚠️ :- Disclaimer', 'SINFO')
                     ]
+                   ]
                 )
             )
             filesarr.append(msg)
@@ -374,12 +365,9 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('Request Gʀᴏᴜᴘ', url=f'https://t.me/+VJzhxoD6GD9kNmQ1'),
-                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                   ],[
-                      InlineKeyboardButton("MY Owner", url="t.me/alonekingjnanesh")
-                     ]
+                      InlineKeyboardButton(f'⚠️ :- Disclaimer', 'SINFO')
                     ]
+                   ]
                 )
             )
             filetype = msg.media
@@ -434,12 +422,9 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('Request Gʀᴏᴜᴘ', url=f'https://t.me/+VJzhxoD6GD9kNmQ1'),
-              InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-           ],[
-              InlineKeyboardButton("MY Owner", url="t.me/alonekingjnanesh")
-             ]
+              InlineKeyboardButton(f'⚠️ :- Disclaimer', 'SINFO')
             ]
+           ]
         )
     )
     btn = [[
