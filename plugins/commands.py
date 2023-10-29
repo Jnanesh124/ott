@@ -71,7 +71,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(f'↻ Tʀʏ Aɢᴀɪɴ', callback_data=f"checksub#{kk}#{file_id}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**<b>join our channel given below<\b>**",
+            text="**👇 join our channel given below 👇 after join again ask movie in ur group/bot**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
