@@ -128,6 +128,22 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
+        btn.insert(0, 
+            [                
+                InlineKeyboardButton("🔊ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("🔍 HOW TO DOWNLOAD🔎", url=f"https://t.me/+D7L-rX9lKA43MGRl"),
+                InlineKeyboardButton("🎭Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+            ]
+        )        
+    else:
+        btn = []
+        btn.insert(0, 
+            [                
+                InlineKeyboardButton("🔊ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("🔍 HOW TO DOWNLOAD🔎", url=f"https://t.me/+D7L-rX9lKA43MGRl"),
+                InlineKeyboardButton("🎭Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+            ]
+        )        
     # else:
     #     btn = [
     #         [
