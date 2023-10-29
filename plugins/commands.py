@@ -129,7 +129,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton(f'⚠️ :- Disclaimer', 'SINFO')                          
+                          InlineKeyboardButton('©️ Copyright', url=f'https://t.me/ROCKERSBACKUP/5')                         
                         ]
                        ]
                     )
@@ -145,7 +145,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton(f'⚠️ :- Disclaimer', 'SINFO')
+                          InlineKeyboardButton('©️ Copyright', url=f'https://t.me/ROCKERSBACKUP/5')
                         ]
                        ]
                     )
@@ -306,7 +306,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton(f'⚠️ :- Disclaimer', 'SINFO')
+                      InlineKeyboardButton('©️ Copyright', url=f'https://t.me/ROCKERSBACKUP/5')
                     ]
                    ]
                 )
@@ -365,7 +365,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton(f'⚠️ :- Disclaimer', 'SINFO')
+                      InlineKeyboardButton('©️ Copyright', url=f'https://t.me/ROCKERSBACKUP/5')
                     ]
                    ]
                 )
@@ -422,7 +422,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton(f'⚠️ :- Disclaimer', 'SINFO')
+              InlineKeyboardButton('©️ Copyright', url=f'https://t.me/ROCKERSBACKUP/5')
             ]
            ]
         )
