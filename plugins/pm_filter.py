@@ -2072,7 +2072,7 @@ async def advantage_spell_chok(client, msg):
         ]]
         if NO_RESULTS_MSG:
             await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
-        k = await msg.reply('<b>📝 No Results Found 📝</b> \n\n<b>📌𝐑𝐄𝐀𝐒𝐎N</b>\n\n<b>only type movie</b>\n\n<b>example ➢ Leo</b>\n<b>🖌𝐍𝐨𝐭 𝐫𝐞𝐥𝐞𝐚𝐬𝐞𝐝 𝐦𝐨𝐯𝐢𝐞</b>\n<b>🖌𝐀𝐝𝐦𝐢𝐧 𝐧𝐨𝐭 𝐚𝐝𝐝𝐞𝐝 </b>\n<b>💎 Check Spelling 💎› [</b><a href="http://www.google.com"><b>✒Click Here✒</b></a><b>]</b>')
+        k = await msg.reply('<b>📝 No Results Found 📝</b>\n\n<b>🎟𝐑𝐄𝐀𝐒𝐎N</b>\n\n<b>only type movie name</b>\n\n<b>example ➢ Leo</b>\n\n<b>🥺𝐍𝐨𝐭 𝐫𝐞𝐥𝐞𝐚𝐬𝐞𝐝 𝐦𝐨𝐯𝐢𝐞</b>\n<b>🥺𝐀𝐝𝐦𝐢𝐧 𝐧𝐨𝐭 𝐚𝐝𝐝𝐞𝐝</b>\n<b>💎 Check Spelling 💎› [</b><a href="http://www.google.com"><b>✒Click Here✒</b></a><b>]</b>')
         await asyncio.sleep(20)
         await k.delete()
         return
@@ -2089,7 +2089,7 @@ async def advantage_spell_chok(client, msg):
         for k, movie_name in enumerate(movielist)
     ]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spol#{reqstr1}#close_spellcheck')])
-    spell_check_del = await msg.reply("<b>⌨ 𝐓𝐲𝐩𝐞𝐝 𝐁𝐲 :- {message.from_user.mention}\n\n🔎 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐈𝐬 𝐖𝐫𝐨𝐧𝐠 𝐏𝐥𝐞𝐚𝐬𝐞 𝐂𝐡𝐞𝐜𝐤 𝐁𝐞𝐥𝐨𝐰 𝐂𝐨𝐫𝐫𝐞𝐜𝐭 𝐌𝐨𝐯𝐢𝐞 🔎\n\n🔎 ನೀನು ಟೈಪ್ ಮಾಡಿದ ಪದ ಸರಿ ಇಲ್ಲ ಕೆಳಗಡೆ ಇರುವ ಸರಿಯಾದ ಪದ ವನ್ನು ಪ್ರಸ್ ಮಾಡು 🔎\n\n🔎 वर्तनी ग़लत है कृपया नीचे सही वर्तनी चुनें 🔎<\b>",
+    spell_check_del = await msg.reply("<b>🔎 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐈𝐬 𝐖𝐫𝐨𝐧𝐠 𝐏𝐥𝐞𝐚𝐬𝐞 𝐂𝐡𝐞𝐜𝐤 𝐁𝐞𝐥𝐨𝐰 𝐂𝐨𝐫𝐫𝐞𝐜𝐭 𝐌𝐨𝐯𝐢𝐞 🔎\n\n🔎 ನೀನು ಟೈಪ್ ಮಾಡಿದ ಪದ ಸರಿ ಇಲ್ಲ ಕೆಳಗಡೆ ಇರುವ ಸರಿಯಾದ ಪದ ವನ್ನು ಪ್ರಸ್ ಮಾಡು 🔎\n\n🔎 वर्तनी ग़लत है कृपया नीचे सही वर्तनी चुनें 🔎<\b>",
                      reply_markup=InlineKeyboardMarkup(btn))
     try:
         if settings['auto_delete']:
