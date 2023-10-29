@@ -1904,16 +1904,22 @@ async def auto_filter(client, msg, spoll=False):
     temp.GETALL[key] = files
     temp.SHORT[message.from_user.id] = message.chat.id
     if settings["button"]:
-        btn = [
+        btn.insert(0, 
             [
-                InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
-                ),
+                InlineKeyboardButton("🔊ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("🔍 HOW TO DOWNLOAD🔎", url=f"https://t.me/+D7L-rX9lKA43MGRl"),
+                InlineKeyboardButton("🎭Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
-            for file in files
-        ]        
+        )        
     else:
         btn = []
+        btn.insert(0, 
+            [
+                InlineKeyboardButton("🔊ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("🔍 HOW TO DOWNLOAD🔎", url=f"https://t.me/+D7L-rX9lKA43MGRl"),
+                InlineKeyboardButton("🎭Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+            ]
+        )        
     if offset != "":
         req = message.from_user.id if message.from_user else 0
         try:
