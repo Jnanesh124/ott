@@ -1,12 +1,25 @@
 class script(object):
-    START_TXT = """<b>Hᴇʟʟᴏ {},
-Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ 
+    START_TXT = """<b>Hᴇʟʟᴏ {}, I Am Ott Searcher🎭
 
-u can also add ur shartner and earn money 
+Kannada Movie File Hub 📤
 
-Format:- /shortlink OnePageLink.in 6e8c7bd83339d97a5a695a66effd5b5cf2382057 
+Join :- https://t.me/+Ftmh1BrAeBAwMjRl
 
-🚀 𝐌𝐚𝐢𝐧𝐭𝐚𝐢𝐧𝐞𝐝 𝐁𝐲 : <a href='https://t.me/alonekingjnanesh'>jnanesh gowda</a></b>"""
+Kannada online Streaming movies 👀
+
+Join :- https://t.me/+66Rsf3q0p3c2M2Nl
+
+All Language Ott Movie direct file 📂
+
+Join :- https://t.me/+8K8gz7k6Ry05YzZl
+
+Action and adventure movies ⛩
+
+Join :- https://t.me/+2n18ciItiAUyNWY9
+
+©️Backup channel  :- @ROCKERSBACKUP
+
+👇Type Ane Movie U Want Below I Will Send Direct File 👇</b>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.
